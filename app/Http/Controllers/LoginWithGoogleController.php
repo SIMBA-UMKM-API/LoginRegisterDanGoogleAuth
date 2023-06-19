@@ -43,9 +43,10 @@ class LoginWithGoogleController extends Controller
                 return redirect()->intended('dashboard');
             }
 
-            // dd($user);
+            dd($user);
         } catch (Exception $e) {
             dd($e->getMessage());
         }
     }
 }
+

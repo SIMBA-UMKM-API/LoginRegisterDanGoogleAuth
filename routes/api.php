@@ -25,6 +25,9 @@ Route::post("register", [UserController::class, 'register']);
 //LOGIN
 Route::post("login", [UserController::class, 'login']);
 
+//FORGOT PASSWORD
+Route::post("forgot-password", [UserController::class, 'forgotPassword']);
+
 
 //REGISTER BUSINESS
 Route::post("registerBusiness", [UMKMController::class, 'registerBusiness']);
